@@ -2,7 +2,7 @@ image: "mysql"
 imageTag: "8.0"
 port: 3306
 initializationFiles:
-    nrf-db.sql: |-
+    lib-db.sql: |-
       CREATE USER 'upgradpg'@'%'  IDENTIFIED BY 'upgradpg';
       CREATE DATABASE IF NOT EXISTS upgradpg DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
       ALTER USER 'upgradpg'@'%' IDENTIFIED WITH mysql_native_password BY 'upgradpg';
