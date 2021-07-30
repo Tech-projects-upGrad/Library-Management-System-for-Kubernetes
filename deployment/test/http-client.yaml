@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "http-client"
+  labels:
+    app: "http-client"
+spec:
+  containers:
+  - name: http-client
+    image: "upgrad1/alpine-bash-curl"
+    command: ["/bin/bash","-c","tail -f /dev/null"]
+    resources:
+      limits:
+        cpu: "0.2"
+      requests:
+        cpu: "0.2"    
+

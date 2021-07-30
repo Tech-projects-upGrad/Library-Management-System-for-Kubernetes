@@ -1,0 +1,11 @@
+mysql:
+  host: "db-mysql"
+eureka:
+  host: "serviceregistry"     
+configServer:
+  host: "configserver"  
+service:
+  name: "librarysvc"      
+bookMgmt:
+  host: "bookmgmtsvc"  
+

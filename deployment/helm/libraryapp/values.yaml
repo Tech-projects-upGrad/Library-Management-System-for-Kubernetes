@@ -1,0 +1,12 @@
+apigateway:
+  image:
+    name: "105420052274.dkr.ecr.us-east-1.amazonaws.com/apigatewaysvc"
+    tag: "latest"     
+librarysvc:
+  image:
+    name: "105420052274.dkr.ecr.us-east-1.amazonaws.com/librarysvc"
+    tag: "latest"     
+bookmgmtsvc:
+  image:
+    name: "105420052274.dkr.ecr.us-east-1.amazonaws.com/bookmgmtsvc"
+    tag: "latest"     

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: librarysvc  
+data: 
+  MYSQL_HOST: {{ .Values.mysql.host }}
+  EUREKA_HOST_NAME: {{ .Values.eureka.host }}
+  CONFIGSERVER_HOST: {{ .Values.configServer.host }}
+  BOOKMGMT_HOST_NAME: {{ .Values.bookMgmt.host }}
+  SERVICE_NAME: {{ .Values.service.name }}

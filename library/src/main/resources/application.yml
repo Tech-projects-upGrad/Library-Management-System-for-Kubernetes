@@ -10,4 +10,5 @@ eureka:
       localhost
 
   instance:
-    hostname: ${EUREKA_HOST_NAME:localhost}
+    hostname: ${SERVICE_NAME:localhost}
+    preferIpAddress: true
